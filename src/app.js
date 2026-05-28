@@ -8,9 +8,6 @@ const app=express();
 app.use(express.json());
 app.use(morgan('dev'));
 
-// Ruta de prueba ← AGREGA ESTA
-app.get('/ping', (req, res) => res.json({ ok: true }));
-
 //Routes
 app.use(productsroutes);
 export default app;
